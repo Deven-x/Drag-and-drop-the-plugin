@@ -35,8 +35,8 @@ var params = {
 			var e = event || window.event;
 			var nL = e.clientX - params.disX;
 			var nT = e.clientY - params.disY;
-			var maxL = document.documentElement.clientWidth - tat.offsetWidth;
-			var maxT = document.documentElement.clientHeight - tat.offsetHeight; 
+			var maxL = document.documentElement.clientWidth - tat.offsetWidth || document.body.clientWidth - tat.offsetWidth;
+			var maxT = document.documentElement.clientHeight - tat.offsetHeight || document.body.clientHeight - tat.offsetHeight;  
 
 			nL = nL < 0 ? 0 : nL;
 			nL = nL > maxL ? maxL : nL;
