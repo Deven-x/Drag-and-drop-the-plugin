@@ -48,7 +48,7 @@ var params = {
 			tat.style.left = nL + "px";
 			tat.style.top = nT + "px";
 
-			return false
+			return false;
 		}
 
 		
